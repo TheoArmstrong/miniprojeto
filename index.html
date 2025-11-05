@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    
+    
+</head>
+
+<body>
+
+    <h2>Digite sua nota: </h2>
+    <label for="Nota">Nota: </label>
+    <input type="text" id="Nota"><br><br>
+
+    <h3>Qual a Urgencia da nota: </h3>
+    <div>
+        <input type="radio" name="urgencia" value="NaoUrgente" id="NaoUrgente">
+        <label for="NaoUrgente">Não Urgente</label>
+    </div>
+    <div>
+        <input type="radio" name="urgencia" value="Urgente" id="Urgente">
+        <label for="Urgente">Urgente</label>
+    </div>
+
+
+    <div id="NaoUrgente">
+        <ol id="listaNãoUrgente">
+
+        </ol>
+    </div>
+    <br><br>
+    <div id="Urgente">
+        <ol id="listaUrgente">
+
+        </ol>
+    </div>
+    <br><br>
+
+    <button id="btnNotas" onclick="addNota()">Adicionar Nota</button><br><br>
+
+    <h2>Qual o numero da nota que quer excluir?: </h2>
+    <label for="NotaExcluir">Numero da nota: </label>
+    <input type="text" id="NotaExcluir"><br><br>
+
+    <h3>Qual a Urgencia da nota que quer excluir?: </h3>
+    <div>
+        <input type="radio" name="urgenciaExcluir" value="NaoUrgente" id="NaoUrgente">
+        <label for="NaoUrgente">Não Urgente</label>
+    </div>
+    <div>
+        <input type="radio" name="urgenciaExcluir" value="Urgente" id="Urgente">
+        <label for="Urgente">Urgente</label>
+    </div>
+
+    <button id="btnExcluirNotas" onclick="excluirNota()">Excluir Nota</button><br><br>
+
+    <button id="btnExcluirNotas" onclick="excluirNotas()">Excluir Todas as Notas</button><br><br>
+
+
+</body>
+
+</html>
