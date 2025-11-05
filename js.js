@@ -43,10 +43,6 @@ function excluirNota() {
     }
 
     if(radioSelecionado.value === "NaoUrgente"){
-        if(Nnota < 1 || Nnota > LNUrgente.length) {
-            alert("Número de nota inválido! Por favor, insira um número entre 1 e " + LNUrgente.length);
-            return;
-        }
         index = Nnota - 1;
         LNUrgente.splice(index, 1);
         document.getElementById('listaNãoUrgente').innerHTML = '';
@@ -55,10 +51,6 @@ function excluirNota() {
         }
     }
     if(radioSelecionado.value === "Urgente"){
-        if(Nnota < 1 || Nnota > LUrgente.length) {
-            alert("Número de nota inválido! Por favor, insira um número entre 1 e " + LUrgente.length);
-            return;
-        }
         index = Nnota - 1;
         LUrgente.splice(index, 1);
         document.getElementById('listaUrgente').innerHTML = '';
