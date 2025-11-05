@@ -13,6 +13,9 @@
 
 <body>
 
+    <div id="caixa">
+
+    <div id="Adição">
     <h2>Digite sua nota: </h2>
     <label for="Nota">Nota: </label>
     <input type="text" id="Nota"><br><br>
@@ -27,21 +30,10 @@
         <label for="Urgente">Urgente</label>
     </div>
 
-
-    <div id="NaoUrgente">
-        <ol id="listaNãoUrgente">
-
-        </ol>
-    </div>
-    <br><br>
-    <div id="Urgente">
-        <ol id="listaUrgente">
-
-        </ol>
-    </div>
-    <br><br>
-
     <button id="btnNotas" onclick="addNota()">Adicionar Nota</button><br><br>
+    </div>
+
+    <div id="Exclusão">
 
     <h2>Qual o numero da nota que quer excluir?: </h2>
     <label for="NotaExcluir">Numero da nota: </label>
@@ -61,6 +53,22 @@
 
     <button id="btnExcluirNotas" onclick="excluirNotas()">Excluir Todas as Notas</button><br><br>
 
+    </div>
+    </div>
+
+    <h1>Lista Não Urgente:</h1>
+    <div id="NaoUrgente">
+        <ol id="listaNãoUrgente">
+
+        </ol>
+    </div>
+    <br><br>
+    <h1>Lista Urgente:</h1>
+    <div id="Urgente">
+        <ol id="listaUrgente">
+
+        </ol>
+    </div>
 
 </body>
 

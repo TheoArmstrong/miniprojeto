@@ -13,6 +13,11 @@ ol {
     margin: 0;
 }
 
+#caixa {
+    display: flex;
+    gap: 130px;
+}
+
 /* Não urgentes: amarelo-limão */
 #listaNãoUrgente li {
     background: linear-gradient(90deg, #f7ffcc 0%, #eaff66 100%);
